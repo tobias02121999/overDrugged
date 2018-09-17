@@ -7,7 +7,7 @@ public class scr_playerStates : MonoBehaviour {
     // Initialize the private variables
     private scr_playerFunctions playerFunctions;
     private scr_playerStats playerStats;
-    private string playerState = "NEUTRAL";
+    private string playerState = "DEFAULT";
 
 	// Use this for initialization
 	void Start ()
@@ -34,6 +34,9 @@ public class scr_playerStates : MonoBehaviour {
         {
             // The default player state
             case "DEFAULT":
+
+                // Run the player movement function
+                playerFunctions.playerMovement(playerStats.inputAxisHorizontal, playerStats.inputAxisVertical, playerStats.movementSpeed);
 
                 break;
         }
