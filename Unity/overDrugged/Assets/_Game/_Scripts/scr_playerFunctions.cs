@@ -4,8 +4,12 @@ using UnityEngine;
 
 public class scr_playerFunctions : MonoBehaviour {
 
+    // Initialize the public variables
+    public GameObject playerInteractionHitbox;
+
     // Initialize the private variables
     private Rigidbody playerRigidbody;
+    private scr_isColliding 
 
 	// Use this for initialization
 	void Start ()
@@ -34,6 +38,14 @@ public class scr_playerFunctions : MonoBehaviour {
 
             // Apply the converted rotation to the players rigidbody
             transform.rotation = Quaternion.Euler(transform.eulerAngles.x, rotationY, transform.eulerAngles.z);
-        }   
+        }
+    }
+
+    public void interact()
+    {
+        if ()
+        {
+            
+        }
     }
 }

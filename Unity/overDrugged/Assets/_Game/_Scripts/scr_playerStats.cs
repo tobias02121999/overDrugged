@@ -18,6 +18,6 @@ public class scr_playerStats : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
-		
+        
 	}
 }

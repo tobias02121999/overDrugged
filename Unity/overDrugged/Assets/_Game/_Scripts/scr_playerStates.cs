@@ -2,12 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+enum states { DEFAULT, COOKING }
+
 public class scr_playerStates : MonoBehaviour {
 
     // Initialize the private variables
     private scr_playerFunctions playerFunctions;
     private scr_playerStats playerStats;
-    private string playerState = "DEFAULT";
+    private states playerState = states.DEFAULT;
 
 	// Use this for initialization
 	void Start ()
@@ -27,16 +29,19 @@ public class scr_playerStates : MonoBehaviour {
 	}
 
     // Run the player state according to the given argument
-    void runState(string stateName)
+    void runState(states stateName)
     {
         // Scroll through all of the player states, and run the functions corresponding to the given state name
         switch (stateName)
         {
             // The default player state
-            case "DEFAULT":
+            case states.DEFAULT:
 
                 // Run the player movement function
                 playerFunctions.playerMovement(playerStats.inputAxisHorizontal, playerStats.inputAxisVertical, playerStats.movementSpeed);
+
+                // Run the player interact function
+                playerFunctions.interact();
 
                 break;
         }
