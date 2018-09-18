@@ -4,20 +4,15 @@ using UnityEngine;
 
 public class scr_playerStats : MonoBehaviour {
 
+    // This script is used to initialize the player statistics, to keep things structurized and neat
+
     // Initialize the public variables
     public string inputAxisHorizontal;
     public string inputAxisVertical;
+    public string inputButtonItemPickup;
+    public string inputButtonItemDrop;
     public float movementSpeed;
 
-	// Use this for initialization
-	void Start ()
-    {
-		
-	}
-	
-	// Update is called once per frame
-	void Update ()
-    {
-        
-	}
+    [HideInInspector]
+    public bool isHolding;
 }

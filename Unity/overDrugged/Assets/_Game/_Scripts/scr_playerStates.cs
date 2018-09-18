@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-enum states { DEFAULT, COOKING }
+// Define the player states and store them inside of an enum
+enum states { DEFAULT }
 
 public class scr_playerStates : MonoBehaviour {
 
@@ -40,8 +41,11 @@ public class scr_playerStates : MonoBehaviour {
                 // Run the player movement function
                 playerFunctions.playerMovement(playerStats.inputAxisHorizontal, playerStats.inputAxisVertical, playerStats.movementSpeed);
 
-                // Run the player interact function
-                playerFunctions.interact();
+                // Run the player item pickup function
+                playerFunctions.playerItemPickup(playerStats.inputButtonItemPickup, playerStats.isHolding);
+
+                // Run the player item drop function
+                playerFunctions.playerItemDrop(playerStats.inputButtonItemDrop, playerStats.isHolding);
 
                 break;
         }
