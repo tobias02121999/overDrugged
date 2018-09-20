@@ -62,10 +62,13 @@ public class scr_playerFunctions : MonoBehaviour {
         // Drop an item if one is being held and the corresponding button is being pressed
         if (isHolding && Input.GetAxis(inputItemDrop) != 0f)
         {
-            GetComponentInChildren<scr_item>().GetComponent<Rigidbody>().isKinematic = false; // Make the item non-kinematic (enables most of the physics aspects)
-            GetComponentInChildren<scr_item>().GetComponent<BoxCollider>().enabled = true; // Enable the items box collider
+            if (playerItemTransform.childCount > 0)
+            {
+                GetComponentInChildren<scr_item>().GetComponent<Rigidbody>().isKinematic = false; // Make the item non-kinematic (enables most of the physics aspects)
+                GetComponentInChildren<scr_item>().GetComponent<BoxCollider>().enabled = true; // Enable the items box collider
 
-            GetComponentInChildren<scr_item>().transform.parent = null; // Disconnect the item from it's current parent
+                GetComponentInChildren<scr_item>().transform.parent = null; // Disconnect the item from it's current parent
+            }
 
             GetComponent<scr_playerStats>().isHolding = false; // Notify the player that it's currently not holding an item
         }
