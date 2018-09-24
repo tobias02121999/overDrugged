@@ -1,18 +1,39 @@
 fileFormatVersion: 2
-guid: c2fc52044224d664daa52dfed571e6b2
+guid: e58549e996c65df4c9388d798af0f3f2
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: default
-    100002: //RootNode
-    400000: default
-    400002: //RootNode
-    2100000: defaultMat
-    2300000: default
-    3300000: default
-    4300000: default
+    100000: //RootNode
+    400000: //RootNode
+    2100000: BagContent
+    2100002: Metal
+    2100004: Rubber
+    2100006: Plastic
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: Infuus
     2186277476908879412: ImportLogs
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BagContent
+    second: {fileID: 2100000, guid: 96720776e82ca424c9d526445bd32682, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Metal
+    second: {fileID: 2100000, guid: 05b6af2ead20d4949a5c744722f6ada4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Plastic
+    second: {fileID: 2100000, guid: 82085975784dcd14ba09d2b8ed7ac55b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Rubber
+    second: {fileID: 2100000, guid: 194c60458c8031c439db4332ec2b34a5, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -62,7 +83,7 @@ ModelImporter:
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
-    useFileScale: 1
+    useFileScale: 0
     previousCalculatedGlobalScale: 1
     hasPreviousCalculatedGlobalScale: 0
   tangentSpace:

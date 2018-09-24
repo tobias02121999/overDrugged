@@ -1,18 +1,45 @@
 fileFormatVersion: 2
-guid: c3351331f1047f04a96afc876134f418
+guid: 71d0903b346c4d440a649b036470dd23
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
-    100002: default
     400000: //RootNode
-    400002: default
-    2100000: defaultMat
-    2300000: default
-    3300000: default
-    4300000: default
+    2100000: CoatAndHat
+    2100002: Skin
+    2100004: Shirt
+    2100006: Cross
+    2100008: Eyes
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: character
     2186277476908879412: ImportLogs
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CoatAndHat
+    second: {fileID: 2100000, guid: a78e8443fcd25df44a09b23e4edbecf9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cross
+    second: {fileID: 2100000, guid: 8dffc78dc86e25648aaf7a53778e1d55, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Eyes
+    second: {fileID: 2100000, guid: c6f54327ff9b237499f4221b58c75b2b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Shirt
+    second: {fileID: 2100000, guid: 6a1209cedf5162b4fa28e716e234529c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Skin
+    second: {fileID: 2100000, guid: 0573b098e5e1a71448082230bae08df7, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -62,7 +89,7 @@ ModelImporter:
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
-    useFileScale: 1
+    useFileScale: 0
     previousCalculatedGlobalScale: 1
     hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
