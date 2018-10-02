@@ -1,18 +1,33 @@
 fileFormatVersion: 2
-guid: b42b7c96a5157a341a76d80a0ac49f06
+guid: 640c1930e09f68744ac7f22d84d479d2
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: default
-    100002: //RootNode
-    400000: default
-    400002: //RootNode
-    2100000: defaultMat
-    2300000: default
-    3300000: default
-    4300000: default
+    100000: //RootNode
+    400000: //RootNode
+    2100000: mat_Metal
+    2100002: mat_Cart_Tray
+    2100004: mat_Rubber
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: DeliveryCart
     2186277476908879412: ImportLogs
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mat_Cart_Tray
+    second: {fileID: 2100000, guid: caca70701e40d7240b92c7c962fe6a03, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mat_Metal
+    second: {fileID: 2100000, guid: c5e85c0bcdec3a04f868099ed8294c2e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mat_Rubber
+    second: {fileID: 2100000, guid: a6095e874cdb7654195fb8bb32a330ab, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -62,7 +77,7 @@ ModelImporter:
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
-    useFileScale: 1
+    useFileScale: 0
     previousCalculatedGlobalScale: 1
     hasPreviousCalculatedGlobalScale: 0
   tangentSpace:

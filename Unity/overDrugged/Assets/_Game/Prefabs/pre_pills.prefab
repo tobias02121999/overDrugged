@@ -20,7 +20,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4329844896970232}
   - component: {fileID: 33512065023355186}
-  - component: {fileID: 23642797532050386}
   m_Layer: 9
   m_Name: default
   m_TagString: Untagged
@@ -73,48 +72,13 @@ Transform:
   m_Father: {fileID: 4221831659677956}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &23642797532050386
-MeshRenderer:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1709749283398166}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 4294967295
-  m_Materials:
-  - {fileID: 2100000, guid: dd2dafbee19ec78419903de8c9778eeb, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
 --- !u!33 &33512065023355186
 MeshFilter:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1709749283398166}
-  m_Mesh: {fileID: 4300000, guid: 6e5537d733961d746a22f61b4be93fcf, type: 3}
+  m_Mesh: {fileID: 4300000, guid: 60046119be0821f4aa6c8ad7e2cddc68, type: 3}
 --- !u!54 &54329407642568804
 Rigidbody:
   m_ObjectHideFlags: 1

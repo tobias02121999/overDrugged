@@ -1,18 +1,52 @@
 fileFormatVersion: 2
-guid: ea4c1736853c01d43b92198e6905bd55
+guid: c66bb8455b245e144933a86ef23c8dcd
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
-    100002: default
     400000: //RootNode
-    400002: default
-    2100000: defaultMat
-    2300000: default
-    3300000: default
-    4300000: default
+    2100000: mat_BlanketUnderside
+    2100002: mat_Metal
+    2100004: mat_Wood
+    2100006: mat_Matress
+    2100008: mat_Blanket
+    2100010: mat_Pillow
+    2100012: default_material
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: Bed
     2186277476908879412: ImportLogs
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mat_Blanket
+    second: {fileID: 2100000, guid: 09c46a04fdd647848a889761aed367ff, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mat_BlanketUnderside
+    second: {fileID: 2100000, guid: eb7c07069822c3344bee4da4f3b64029, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mat_Matress
+    second: {fileID: 2100000, guid: 3a13909a5a77a994babe0b85fc62ca77, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mat_Metal
+    second: {fileID: 2100000, guid: 4fd73c685cb2a0d4aa446bbf8ad11317, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mat_Pillow
+    second: {fileID: 2100000, guid: 2fe76bddc11ccf74aa91937de832e0c2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mat_Wood
+    second: {fileID: 2100000, guid: 3e08e4381571c7b439ddb0e6bdfec1a8, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -62,7 +96,7 @@ ModelImporter:
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
-    useFileScale: 1
+    useFileScale: 0
     previousCalculatedGlobalScale: 1
     hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
